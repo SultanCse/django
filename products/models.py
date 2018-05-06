@@ -8,4 +8,7 @@ class Products_list(models.Model):
     image = models.FileField(upload_to='products/', null=True, blank=True)
 
     def __str__(self):
-        return self.title + '   ' + self.price + '   ' + self.description + '   ' + str(self.image)
+        return self.title + '   ' + self.price + '   ' + self.description #+ '   ' + str(self.image)
+
+
+

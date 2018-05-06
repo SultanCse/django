@@ -65,8 +65,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div>
         <h1>{{ y.title }}</h1>
         <h2>{{ y.price }}</h2>
-        <p>{{ y.description }}</p> 
-		<img src="{{y.image.url}}" alt="image loading problem" width="200px" height="200px">		
+		<p>{{ y.description }}</p> 
+		{% if y.image %}
+		<img src="{{y.image.url}}" alt="image loading problem" width="200px" height="200px">
+		{% endif %}
     </div>
     {% endfor  %}
 
